@@ -5,10 +5,9 @@
 class About extends Controller
 {
 
-    public function index($nama = 'Heri Fidiawan', $alias = 'Hery_Dev__'){
-        $data['nama'] = $nama;
-        $data['alias'] = $alias;
+    public function index(){
         $data['title'] = 'ABOUT';
+        $data['admin'] = $this->model('User_model')->getUserById(1);
         $this->view('templates/header', $data);
         $this->view('about/index', $data);
         $this->view('templates/footer');

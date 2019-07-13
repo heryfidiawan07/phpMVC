@@ -1,3 +1,4 @@
-
-    <h1>ABOUT INDEX</h1>
-    <p>Nama saya <?= $data['nama'] ?> Alias <?= $data['alias'] ?>.</p>
+<div class="container">
+    <h1>ABOUT INDEX ADMIN</h1>
+    <p>My name <?= $data['admin']['name'] ?>, Email <?= $data['admin']['email'] ?>.</p>
+</div>
